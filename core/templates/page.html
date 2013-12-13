@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p> Music and Artists for youuuuuu taste! </p>
+{% for artist in artist_songs %}
+    <b> {{ artist.0.ArtistName }} </b>
+    {% for song in artist %}
+        <p> <a href="{{ song.Url }}" target="InlineFrame_{{forloop.parentloop.counter}}_{{forloop.counter}}">{{ song.SongName }}</a></p>
+
+            <object type="application/x-shockwave-flash" data="http://grooveshark.com/songWidget.swf" width="250" height="40">
+                <param name="wmode" value="window" /><param name="allowScriptAccess" value="always" />
+                <param name="flashvars" value="hostname=grooveshark.com&songID={{song.SongID}}&style=indie&p=0" />
+            </object>
+        </br>
+    {% endfor %}
+{% endfor %}
+{% endblock %}
