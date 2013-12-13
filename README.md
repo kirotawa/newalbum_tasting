@@ -1,6 +1,9 @@
-New Albums Release Tasting
+New Album Release Tasting
 ==========================
 
-As the name define is an app over Django that provide a way for the music addicted tasting new albums release bands before you think in download it or just tasting to not copy and paste to grooveshark manually.
+Using this simple app in your browser you will be able to taste the indie (for now)
+artists that were release in NAR - New Album Release site. 
+
+It is busted with both NAR information and tiny + grooveshark music library.
 
 
